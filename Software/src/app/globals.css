@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FDF4F3;
+  --foreground: #171717;
+  --primary: #A52A2A;
+  --secondary: #228B22;
+  --accent: #FF4500;
+  --dark: #2C3E50;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #FDF4F3;
+    --foreground: #5A82FC;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#popupBoxOnePosition {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.popupBoxWrapper {
+  background: transparent;
+}
+
+.popupBoxContent {
+  padding: 1rem;
+}
